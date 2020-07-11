@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+    <title>Email Searcher!</title>
+    <meta content="150 words here" name="description">
+    <meta content="word1,word2,word3,word4" name="keywords">
+    <!-- Material Components -->
+    <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+
+    <div class="heading">
+        <div class="heading-text">
+            <p>Email Searcher</p>
+        </div>
+        <div class="mode">
+            <div class="modebtn" id="modebtn">
+                <button class="mdc-button mdc-button--raised" onclick="modeChange()">
+                     <div class="mdc-button__ripple"></div>
+                 
+                     <span class="mdc-button__label">Enable Dark Mode</span>
+                   </button>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="main">
+        <div class="center">
+            <div class="centercard">
+                <div class="searchbox" id="searchbox">
+                    <label class="mdc-text-field mdc-text-field--filled mdc-text-field--fullwidth">
+                     <span class="mdc-text-field__ripple"></span>
+                     <input class="mdc-text-field__input"
+                            type="text"
+                            placeholder="Enter Email Here"
+                            aria-label="Full-Width Text Field">
+                     <span class="mdc-line-ripple"></span>
+                   </label>
+                </div>
+
+                <div class="searchbtn" id="searchbtn">
+                    <button class="mdc-button mdc-button--raised">
+                     <div class="mdc-button__ripple"></div>
+                 
+                     <span class="mdc-button__label">Search</span>
+                   </button>
+                </div>
+
+                <div class="search-dropdown" id="search-dropdown">
+                    <ul class="mdc-list mdc-list--two-line">
+                        <li class="mdc-list-item" tabindex="0">
+                            <span class="mdc-list-item__text">
+                            <span class="mdc-list-item__primary-text">Two-line item</span>
+                            <span class="mdc-list-item__secondary-text">Secondary text</span>
+                            </span>
+                        </li>
+                        <li class="mdc-list-item">
+                            <span class="mdc-list-item__text">
+                            <span class="mdc-list-item__primary-text">Two-line item</span>
+                            <span class="mdc-list-item__secondary-text">Secondary text</span>
+                            </span>
+                        </li>
+                        <li class="mdc-list-item">
+                            <span class="mdc-list-item__text">
+                            <span class="mdc-list-item__primary-text">Two-line item</span>
+                            <span class="mdc-list-item__secondary-text">Secondary text</span>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    </div>
+
+    <footer class="footer">
+        <div class="mdc-card">
+            <p>Copyright &copy; 2020 by Dude</p>
+        </div>
+    </footer>
+</body>
+<!-- Material Components -->
+<script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-6H5JHG2V6S"></script>
+<script>
+    function gtag() {
+        dataLayer.push(arguments)
+    }
+    window.dataLayer = window.dataLayer || [], gtag("js", new Date), gtag("config", "G-6H5JHG2V6S")
+</script>
+<!-- JavaScript is mandatory -->
+<noscript>For this website full functionality, JavaScript must be activated and enabled.</noscript>
+
+
+<script src="main.js"></script>
+
+</html>
